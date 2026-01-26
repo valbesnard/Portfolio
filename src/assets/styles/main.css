@@ -1,16 +1,16 @@
-@import url("colors.css");
 @import url("shape.css");
 @import url("font.css");
 @import url("icons.css");
+@import url("colors.css");
 
 :root {
     /* Main colors for layout */
-    --main-bg-color: #d6c7da;
+    --main-bg-color: #ffffff;
     --main-color: black;
-    --main-link-color: #4B3F6E;
+    --main-link-color: rgb(0, 0, 238);
 
     /* Colors for more varieties */
-    --alt-bg-color: #6C5F8D;
+    --alt-bg-color: #9C8CB9;
     --alt-color: white;
     --alt-link-color: white;
 
@@ -31,6 +31,25 @@
 
     /* Color for cards */
     --card-bg-color: #DCD7D5;
+
+    /* Sizes font */
+    --font-size-hight: 1.8em;
+    --font-size-medium: 1.4em;
+    --font-size-contents: 1em;
+
+    /* line-height */
+    --line-height-title: 1.5em;
+    --line-height-texte: 1.2em;
+
+    /* margin */
+    --margin-contents: 1em;
+    --margin-hight: 0.8em;
+    --margin-medium: 0.5em;
+    --margin-texte: 0.2em;
+
+    /* padding */
+    --rgt-padding-contents: 1.2em;
+    --lft-padding-contents: 1.5em;
 }
 
 body {

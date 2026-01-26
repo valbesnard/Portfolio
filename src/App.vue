@@ -13,26 +13,37 @@ import Experiences from "@/components/main/Experiences.vue";
 <template>
     <Header />
 
-    <Nav />
+    <div id="app-container">
+        <Nav />
 
-    <main>
-        <AboutMe />
+        <main>
+            <AboutMe />
 
-        <Projects />
+            <Projects />
 
-        <Skills />
+            <Skills />
 
-        <Experiences />
-    </main>
-
+            <Experiences />
+        </main>
+    </div>
+    
     <Footer />
 </template>
 
 <style scoped>
+#app-container {
+    display: flex;
+}
+
+Nav2 {
+    flex: 1;
+}
+
 main {
     margin-top: 1rem;
     padding-left: 1rem;
     padding-right: 2rem;
     margin-bottom: 1rem;
+    flex: 1;
 }
 </style>

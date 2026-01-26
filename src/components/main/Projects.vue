@@ -2,6 +2,11 @@
 import ProjectCard from '@/components/cards/ProjectCard.vue';
 
 import { projects } from '@/data/projects.js';
+import activeSection from '@/scripts/useActiveSection.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    activeSection.addSection("Projects");
+});
 </script>
 
 <template>
@@ -23,5 +28,6 @@ import { projects } from '@/data/projects.js';
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 1rem;
+    box-sizing: border-box;
 }
 </style>

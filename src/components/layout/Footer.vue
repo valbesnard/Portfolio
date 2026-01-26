@@ -1,16 +1,10 @@
 <template>
     <footer>
-        <div>
-            <h2>Contacts</h2>
-            <a class="linkedin icons" href="https://www.linkedin.com/in/besnard-valentin" target="_blank">Profil
-            </a>
-            <a class="github icons" href="https://github.com/Valdu390" target="_blank">Projets</a>
-            <a class="gmail icons" href="mailto:besnard.valentin2005@gmail.com">Me contacter</a>
-        </div>
-        <div>
-            <p>Page réalisé par Valentin BESNARD avec Vue JS dans le cadre d'un BUT
-                Informatique à Lyon 1 (2023 - 2026)</p>
-        </div>
+        <h2>Contacts</h2>
+        <a class="linkedin icons" href="https://www.linkedin.com/in/besnard-valentin" target="_blank">Profil</a>
+        <a class="github icons" href="https://github.com/valbesnard" target="_blank">Projets</a>
+        <a class="gmail icons" href="mailto:pro@vbesnard.fr">Me contacter</a>
+        <p>Portfolio réalisé sous VueJS dans le cadre d'un BUT Informatique à Lyon 1 (2023 - 2026)</p>
     </footer>
 </template>
 
@@ -21,21 +15,12 @@ h2 {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 1rem;
 }
 
-div {
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-}
 
-div:nth-child(2) {
-    justify-content: flex-end;
-}
-
-div:nth-child(2) p {
+p {
     text-align: right;
 }
 </style>
