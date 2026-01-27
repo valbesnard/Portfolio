@@ -1,6 +1,6 @@
 <script setup>
 import { skills as skillsList } from '@/data/skills.js';
-import { experiences } from '@/data/experiences.js';
+import { professionalExperiences } from '@/data/professionalExperiences.js';
 import { useOverlay } from "@/composables/useOverlay";
 import { useIdToTitle } from "@/composables/useIdToTitle";
 import { useSlide } from "@/composables/useSlide";

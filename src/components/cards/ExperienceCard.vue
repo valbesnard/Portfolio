@@ -27,7 +27,6 @@ function getSkillData(id) {
     <div :id="id" class="experience-card">
         <h3>{{ title }}</h3>
         <h4>Contexte : {{ context }}</h4>
-        <h4>Temporalité : {{ date }}</h4>
         <h4>Description</h4>
         <p>{{ description }}</p>
         <a href="#" @click.prevent="showOverlay">Voir plus</a>
@@ -68,3 +67,15 @@ function getSkillData(id) {
         </div>
     </div>
 </template>
+
+<style scoped>
+    h3 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+    }
+</style>

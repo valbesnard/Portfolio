@@ -23,6 +23,22 @@ li {
 }
 
 /* For experience-card */
+#Experiences {
+    display: flex;
+}
+
+#Experiences h2 {
+    text-align: center;
+}
+
+#ProfessionnalExperiences {
+    flex: 1;
+}
+
+#Formations {
+    flex: 1;
+}
+
 .experiences-list {
     display: flex;
     flex-direction: column;

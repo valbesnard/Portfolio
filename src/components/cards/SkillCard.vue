@@ -1,6 +1,6 @@
 <script setup>
 import { projects as projectsList } from "@/data/projects.js";
-import { experiences as experiencesList } from "@/data/experiences.js";
+import { professionalExperiences as experiencesList } from "@/data/professionalExperiences.js";
 import { useOverlay } from "@/composables/useOverlay";
 import { useIdToTitle } from "@/composables/useIdToTitle";
 
