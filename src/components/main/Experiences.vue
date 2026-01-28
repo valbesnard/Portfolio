@@ -5,6 +5,11 @@ import ExperienceCard from '../cards/ExperienceCard.vue';
 
 import { professionalExperiences } from '@/data/professionalExperiences';
 import { formations } from '@/data/formations';
+import activeSection from '@/scripts/useActiveSection.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    activeSection.addSection("Experiences");
+});
 </script>
 
 <template>
@@ -17,7 +22,7 @@ import { formations } from '@/data/formations';
                     
                     <template #marker="slotProps" class="separator-custom">
                         <span class="marker-custom">
-                            <img src="../../../public/images/icons/work.png" alt="Work Icon" class="timeline-icon" />
+                            <img src="/images/icons/work.png" alt="Work Icon" class="timeline-icon" />
                         </span>
                     </template>
 
@@ -40,7 +45,7 @@ import { formations } from '@/data/formations';
                 <Timeline :value="formations" align="left">
                     <template #marker="slotProps" class="separator-custom">
                         <span class="marker-custom">
-                            <img src="../../../public/images/icons/education.png" alt="Work Icon" class="timeline-icon" />
+                            <img src="/images/icons/education.png" alt="Work Icon" class="timeline-icon" />
                         </span>
                     </template>
 

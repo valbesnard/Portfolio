@@ -12,10 +12,6 @@ footer a {
 /*
     Gestion du nav
 */
-nav a {
-    color: var(--nav-color);
-    background-color: var(--nav-bg-color);
-}
 
 .project-card, .experience-card {
     background-color: var(--card-bg-color);

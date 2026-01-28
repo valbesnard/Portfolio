@@ -2,6 +2,11 @@
 import ProjectCard from '@/components/cards/ProjectCard.vue';
 
 import { projects } from '@/data/projects.js';
+import activeSection from '@/scripts/useActiveSection.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    activeSection.addSection("Projects");
+});
 </script>
 
 <template>

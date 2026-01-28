@@ -13,6 +13,12 @@ const filteredSkills = computed(() =>
 function selectCategory(skillCat) {
     cat.value = skillCat;
 }
+
+import activeSection from '@/scripts/useActiveSection.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    activeSection.addSection("Skills");
+});
 </script>
 
 <template>

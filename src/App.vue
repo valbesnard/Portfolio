@@ -2,6 +2,7 @@
 // Layout
 import Header from "@/components/layout/Header.vue";
 import Nav from "@/components/layout/Nav.vue";
+import Nav2 from "@/components/layout/Nav2.vue";
 import Footer from "@/components/layout/Footer.vue";
 // Main
 import AboutMe from "@/components/main/AboutMe.vue";
@@ -13,26 +14,37 @@ import Experiences from "@/components/main/Experiences.vue";
 <template>
     <Header />
 
-    <Nav />
+    <div id="app-container">
+        <Nav2 />
 
-    <main>
-        <AboutMe />
+        <main>
+            <AboutMe />
 
-        <Projects />
+            <Projects />
 
-        <Skills />
+            <Skills />
 
-        <Experiences />
-    </main>
-
+            <Experiences />
+        </main>
+    </div>
+    
     <Footer />
 </template>
 
 <style scoped>
+#app-container {
+    display: flex
+}
+
+Nav2 {
+    flex: 1;
+}
+
 main {
     margin-top: 1rem;
     padding-left: 1rem;
     padding-right: 2rem;
     margin-bottom: 1rem;
+    flex: 1;
 }
 </style>

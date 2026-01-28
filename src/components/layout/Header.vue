@@ -12,6 +12,7 @@ header {
 
 h1 {
     margin: auto;
+    font-size: var(--font-size-hight);
 }
 
 a {
