@@ -2,6 +2,7 @@
 // Layout
 import Header from "@/components/layout/Header.vue";
 import Nav from "@/components/layout/Nav.vue";
+import Nav2 from "@/components/layout/Nav2.vue";
 import Footer from "@/components/layout/Footer.vue";
 // Main
 import AboutMe from "@/components/main/AboutMe.vue";

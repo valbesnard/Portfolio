@@ -1,5 +1,10 @@
 <script setup>
 import { aboutMe } from "@/data/aboutMe.js";
+import activeSection from '@/scripts/useActiveSection.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    activeSection.addSection("AboutMe");
+});
 </script>
 
 <template>
