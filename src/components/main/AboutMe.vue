@@ -1,10 +1,5 @@
 <script setup>
 import { aboutMe } from "@/data/aboutMe.js";
-import activeSection from '@/scripts/useActiveSection.js';
-
-document.addEventListener('DOMContentLoaded', async () => {
-    activeSection.addSection("AboutMe");
-});
 </script>
 
 <template>
@@ -129,4 +124,12 @@ td, th {
     vertical-align: top;
     padding-top: 1em
 }
+
+td, th {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 1em
+}
+
+
 </style>
