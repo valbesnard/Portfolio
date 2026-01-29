@@ -2,9 +2,7 @@
     Gestion des extrémités
 */
 header,
-header a,
-footer,
-footer a {
+footer {
     color: var(--alt-color);
     background-color: var(--alt-bg-color);
 }
@@ -58,11 +56,4 @@ footer a {
 .Soft-element {
     background-color: var(--soft-color-element);
     color: var(--default-skills-color);
-}
-
-/*
-    Gestion des liens
-*/
-a {
-    color: var(--main-link-color);
 }

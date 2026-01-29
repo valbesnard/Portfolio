@@ -3,7 +3,6 @@
         <nav>
             <h2>Sommaire</h2>
             <div class="nav-links">
-                <a href="#AboutMe" id="AboutMe-link">À propos de moi</a>
                 <a href="#Projects" id="Projects-link">Projets réalisés</a>
                 <a href="#Skills" id="Skills-link">Compétences</a>
                 <a href="#Experiences" id="Experiences-link">Expériences</a>
