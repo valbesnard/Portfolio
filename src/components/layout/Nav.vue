@@ -29,6 +29,12 @@ h2 {
 a {
     box-sizing:border-box;
     margin-bottom: var(--margin-contents);
+    color: rgb(0, 0, 238);
+}
+
+.active-content {
+  color: black;
+  font-weight: bold;
 }
 
 h2,a {

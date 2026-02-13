@@ -28,5 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 1rem;
+    box-sizing: border-box;
 }
 </style>
