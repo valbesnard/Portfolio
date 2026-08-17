@@ -1,15 +1,16 @@
 @import url("shape.css");
 @import url("font.css");
 @import url("icons.css");
+@import url("colors.css");
 
 :root {
     /* Main colors for layout */
     --main-bg-color: #ffffff;
     --main-color: black;
-    --main-link-color: #4B3F6E;
+    --main-link-color: rgb(0, 0, 238);
 
     /* Colors for more varieties */
-    --alt-bg-color: #6C5F8D;
+    --alt-bg-color: #9C8CB9;
     --alt-color: white;
     --alt-link-color: white;
 

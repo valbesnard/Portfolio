@@ -21,5 +21,6 @@ h1 {
 
 a {
     text-decoration: none;
+    color: black
 }
 </style>

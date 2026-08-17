@@ -88,4 +88,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     :deep(.p-timeline-event-content) {
         margin: 0.5rem 0;   /* un petit padding vertical */
     }
+
+    :deep(.p-timeline-event-connector) {
+        background-color: black;
+    }
+
+    section {
+        display: flex;
+        gap: 2rem;
+    }
+
+    section > div {
+        flex: 1;
+    }
 </style>

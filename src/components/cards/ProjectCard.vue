@@ -5,6 +5,10 @@ import { useOverlay } from "@/composables/useOverlay";
 import { useIdToTitle } from "@/composables/useIdToTitle";
 import { useSlide } from "@/composables/useSlide";
 
+import ChevronLeft from '@primeicons/vue/chevron-left';
+import ChevronRight from '@primeicons/vue/chevron-right';
+import Carousel from 'primevue/carousel'
+
 const props = defineProps({
     id: String,
     title: String,
@@ -29,15 +33,15 @@ function getSkillData(id) {
 
 <template>
     <div :id='id' class="project-card">
-        <div v-if="images.length" class="top">
+        <!-- <div v-if="images.length" class="top">
             <img :src="images[0].link" alt="Image" />
-        </div>
+        </div> -->
         <h3>{{ title }}</h3>
         <div class="center">
-            <h4>Cadre : <a :href="'#' + experience"> {{ idToTitleExperiences(experience) }} </a></h4>
-            <h4>Temporalité : {{ date }}</h4>
-            <h4>Contexte : {{ context }}</h4>
-            <h4>Résumé</h4>
+            <p><b>Cadre :</b> <a :href="'#' + experience"> {{ idToTitleExperiences(experience) }} </a></p>
+            <p><b>Temporalité :</b> {{ date }}</p>
+            <p><b>Contexte :</b> {{ context }}</p>
+            <p><b>Résumé</b></p>
             <p>{{ resume }}</p>
             <a href="#" @click.prevent="showOverlay">Voir plus</a>
         </div>
@@ -50,16 +54,16 @@ function getSkillData(id) {
                 <a href="" @click.prevent="hideOverlay">Fermer</a>
             </div>
             <div>
-                <h4>Cadre : <a :href="'#' + experience" @click="hideOverlay"> {{ idToTitleExperiences(experience) }}
-                    </a></h4>
-                <h4>Temporalité : {{ date }}</h4>
-                <h4>Contexte : {{ context }}</h4>
-                <h4>Description</h4>
+                <p><b>Cadre :</b> <a :href="'#' + experience" @click="hideOverlay"> {{ idToTitleExperiences(experience) }}
+                    </a></p>
+                <p><b>Temporalité :</b> {{ date }}</p>
+                <p><b>Contexte :</b> {{ context }}</p>
+                <p><b>Description</b></p>
                 <p>{{ description }}</p>
             </div>
 
             <div>
-                <h4>Liens supplémentaire</h4>
+                <p><b>Liens supplémentaire</b></p>
                 <ul>
                     <li v-if="links.length == 0">Aucun lien supplémentaire</li>
                     <li v-for="(link, index) in links" :key="index">
@@ -68,7 +72,7 @@ function getSkillData(id) {
                         </a>
                     </li>
                 </ul>
-                <h4>Compétences acquises</h4>
+                <p><b>Compétences acquises</b></p>
                 <ul class="skills-list">
                     <li v-for="skill in skillsList.filter(s => skills.includes(s.id))">
                         <a href="#Skills" :class="getSkillData(skill.id).category.split(' ', 1) + '-element'"
@@ -78,7 +82,7 @@ function getSkillData(id) {
                 </ul>
             </div>
             <div v-if="images.length">
-                <h4>Images</h4>
+                <!-- <p><b>Images</b></p>
                 <div class="carouselle-image">
                     <a v-if="images.length > 1" href="#" @click.prevent="previous(images)">Précédent</a>
                     <figure>
@@ -86,7 +90,29 @@ function getSkillData(id) {
                         <img :src="images[index].link" alt="Image" />
                     </figure>
                     <a v-if="images.length > 1" href="#" @click.prevent="next(images)">Suivant</a>
-                </div>
+                </div> -->
+
+                <Carousel
+                    :value="images"
+                    :numVisible="1"
+                    :numScroll="1"
+                    circular
+                    class="carousel"
+                >
+                    <template #item="{ data }">
+                        <figure class="carousel-item">
+                            <figcaption>
+                                <em>{{ data.title }}</em>
+                            </figcaption>
+
+                            <img
+                                :src="data.link"
+                                :alt="data.title"
+                                :draggable="false"
+                            />
+                        </figure>
+                    </template>
+                </Carousel>
             </div>
         </div>
     </div>
@@ -103,28 +129,72 @@ export default {
 </script>
 
 <style scoped>
-.carouselle-image {
+a {
+    box-sizing:border-box;
+    margin-bottom: var(--margin-contents);
+    color: rgb(0, 0, 238);
+}
+
+.project-card:target{
+    background-color: rgb(249, 249, 249);
+}
+
+.carousel {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.carouselle-image figure {
-    width: 50%;
-    height: auto;
-    margin: 0;
-}
-
-figcaption {
-    padding-bottom: 10px;
+.carousel-item figcaption {
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-.carouselle-image img {
+.carousel-item img {
+    display: block;
+
     width: 100%;
-    height: auto;
-    border-radius: 25px;
+    height: 450px;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.caption {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    max-height: 450px;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+ figcaption {
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 h3 {

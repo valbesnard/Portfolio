@@ -26,8 +26,8 @@ function getSkillData(id) {
 <template>
     <div :id="id" class="experience-card">
         <h3>{{ title }}</h3>
-        <h4>Contexte : {{ context }}</h4>
-        <h4>Description</h4>
+        <p><b>Contexte :</b> {{ context }}</p>
+        <p><b>Description</b></p>
         <p>{{ description }}</p>
         <a href="#" @click.prevent="showOverlay">Voir plus</a>
     </div>
@@ -39,13 +39,13 @@ function getSkillData(id) {
                 <a href="" @click.prevent="hideOverlay">Fermer</a>
             </div>
             <div>
-                <h4>Contexte : {{ context }}</h4>
-                <h4>Temporalité : {{ date }}</h4>
-                <h4>Description</h4>
+                <p><b>Contexte :</b> {{ context }}</p>
+                <p><b>Temporalité :</b> {{ date }}</p>
+                <p><b>Description</b></p>
                 <p>{{ description }}</p>
             </div>
             <div>
-                <h4>Projets réalisés</h4>
+                <p><b>Projets réalisés</b></p>
                 <ul>
                     <li v-for="project in projectsList.filter(p => projects.includes(p.id))">
                         <a :href="'#' + project.id" @click="hideOverlay"> {{ idToTitleProjects(project.id)
@@ -54,7 +54,7 @@ function getSkillData(id) {
                 </ul>
             </div>
             <div>
-                <h4>Compétences acquises</h4>
+                <p><b>Compétences acquises</b></p>
                 <ul class="skills-list">
                     <li v-for="skill in skillsList.filter(s => skills.includes(s.id))">
                         <a href="#Skills" @click="hideOverlay"

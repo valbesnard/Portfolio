@@ -124,6 +124,4 @@ td, th {
     vertical-align: top;
     padding-top: 1em
 }
-
-
 </style>

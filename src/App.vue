@@ -32,7 +32,7 @@ import Experiences from "@/components/main/Experiences.vue";
 
 <style scoped>
 #app-container {
-    display: flex
+    display: flex;
 }
 
 Nav2 {
