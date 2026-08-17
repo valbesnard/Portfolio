@@ -36,3 +36,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
     </section>
 </template>
+
+<style scoped>
+.Logiciel {
+    background-color: #CDB4DB;
+}
+
+.Langages {
+    background-color: #A9D6E5;
+}
+
+.Informatique {
+    background-color: #B8D8BA;
+}
+
+.Soft {
+    background-color: #FFD6A5;
+}
+</style>

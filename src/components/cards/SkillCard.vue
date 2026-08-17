@@ -1,6 +1,7 @@
 <script setup>
 import { projects as projectsList } from "@/data/projects.js";
 import { professionalExperiences as experiencesList } from "@/data/professionalExperiences.js";
+import { formations as formationsList } from "@/data/formations.js";
 import { useOverlay } from "@/composables/useOverlay";
 import { useIdToTitle } from "@/composables/useIdToTitle";
 
@@ -46,8 +47,19 @@ const props = defineProps({
                         <a :href="'#' + experience.id" @click="hideOverlay"> {{
                             idToTitleExperiences(experience.id) }}</a>
                     </li>
+                    <li v-for="formation in formationsList.filter(e => experiences.includes(e.id))"
+                        :key="formation.id">
+                        <a :href="'#' + formation.id" @click="hideOverlay"> {{
+                            idToTitleExperiences(formation.id) }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </template>
+
+<style scoped>
+a {
+    color: rgb(0, 0, 238);
+}
+</style>

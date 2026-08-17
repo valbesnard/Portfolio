@@ -1,9 +1,59 @@
-// Mention de "MANQUE" s'il faut encore ajouter des liens ou des images
-
 // #############################################################
 //                          Les projets
 // #############################################################
 export const projects = [
+    // ###############################
+    // ###############################
+    //         IUT Informatique
+    // ###############################
+    // ###############################
+    {
+        id: "sae-but3aged",
+        title: "Exploitation des données d'une agence immobilière",
+        context: "Projet SAé - 3ème année",
+        date: "Mars 2026 - Juin 2026",
+        resume: "Création d'un processus ETL, réalisation d'un tableau de bord.",
+        description: "J'ai travaillé en binome sur une mise en situation. Il nous était demandé, à partir de la base de donnée opérationnelle d'une agence immobilière, de calculer une liste d'indicateur via un processus ETL puis de réaliser un tableau de bord. Nous avions pleinement le choix des outils. Pour mener à bien cette tâche, nous avons sélectionner Apache Airflow comme logiciel ETL et Power BI pour la visualisation.",
+        links: [],
+        images: [],
+        skills: [
+            // Logiciels
+            "airflow", "power-bi",
+            // Langages
+            "python", "pl-sql",
+            // Informatique
+            "redaction-documentation", "exploitation-donnees", "realisation-visuel",
+            // Soft skills
+            "travail-equipe", "gestion-projet", "analyse"
+        ],
+        experience: "iut-informatique",
+    },
+    // ###############################
+    // ###############################
+    //         Alternance IUT Informatique
+    // ###############################
+    // ###############################
+    {
+        id: "projet-tuteure-but3aged",
+        title: "Habilitations du back office dans AMMON",
+        context: "Projet tuteuré en alternance",
+        date: "Octobre 2025 - Février 2026",
+        resume: "Analyse des habilitations des comptes back office dans AMMON, proposition de recommandations, mise en application de certaines d'entre elles.",
+        description: "AMMON est un ERP pour la formation. Il existe un front (dit extranet) et back office. J'ai effectué une analyse sur la gestion des comptes back office pour déduire des recommandations. J'ai mis en place un processus ETL pour extraire des données sur l'utilisation des profils et des groupes sur l'ERP puis j'ai utilisé Excel afin de réaliser un tableau de bord pour l'analyse. L'utilisation d'Excel est induite par l'absence d'autres licences pour la visualisation des données.",
+        links: [],
+        images: [],
+        skills: [
+            // Logiciels
+            "hop", "excel",
+            // Langages
+            "sql-server",
+            // Informatique
+            "exploitation-donnees", "realisation-visuel",
+            // Soft skills
+            "gestion-projet", "analyse"
+        ],
+        experience: "rectorat-lyon",
+    },
     // ###############################
     // ###############################
     //     Stage IUT Informatique
@@ -22,7 +72,6 @@ export const projects = [
                 link: "https://github.com/flgoyens/variety-registration",
                 type: "github"
             }
-            // [MANQUE] Lien vers le dépôt pour récupérer le quantile + documentation overleaf
         ],
         images: [
             {

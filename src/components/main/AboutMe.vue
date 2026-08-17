@@ -125,5 +125,11 @@ td, th {
     padding-top: 1em
 }
 
+td, th {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 1em
+}
+
 
 </style>

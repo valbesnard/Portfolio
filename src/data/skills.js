@@ -1,3 +1,5 @@
+// Des éléments sont [A ajouter]
+
 // #############################################################
 //                  Les Catégories de compétences
 // #############################################################
@@ -14,6 +16,29 @@ export const skills = [
     //          Les logiciels
     // ###############################
     // ###############################
+    {
+        id: "airflow",
+        title: "Apache Airflow",
+        category: "Logiciel",
+        experiences: [
+            'iut-informatique'
+        ],
+        projects: [
+            "sae-but3aged"
+        ],
+    },
+    {
+        id: "hop",
+        title: "Apache Hop",
+        category: "Logiciel",
+        experiences: [
+            "rectorat-lyon",
+            'iut-informatique'
+        ],
+        projects: [
+            "projet-tuteure-but3aged"
+        ],
+    },
     {
         id: "microsoft-azure",
         title: "Microsoft Azure",
@@ -33,6 +58,7 @@ export const skills = [
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
             "annuaire-administrations-françaises",
             "realisation-visuels-bi-power-bi"
         ],
@@ -64,6 +90,7 @@ export const skills = [
         title: "Visual Studio Code",
         category: "Logiciel",
         experiences: [
+            "rectorat-lyon",
             "ufr-assp",
             "iut-informatique"
         ],
@@ -123,11 +150,34 @@ export const skills = [
             "soft-move"
         ],
     },
+    {
+        id: "excel",
+        title: "Excel",
+        category: "Logiciel",
+        experiences: [
+            "rectorat-lyon"
+        ],
+        projects: [
+            "projet-tuteure-but3aged",
+            "sae-but3aged"
+        ],
+    },
     // ################################
     // ################################
     //      Langages informatiques
     // ################################
     // ################################
+    {
+        id: "sql-server",
+        title: "SQL Server",
+        category: "Langages informatiques",
+        experiences: [
+            "rectorat-lyon"
+        ],
+        projects: [
+            "projet-tuteure-but3aged"
+        ],
+    },
     {
         id: "pl-sql",
         title: "PL/SQL",
@@ -136,6 +186,7 @@ export const skills = [
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
             "conception-realisation-bdd-centre-formation-medicale"
         ],
     },
@@ -159,6 +210,7 @@ export const skills = [
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
             "conformal-prediction-registration-of-algebraic-varieties"
         ],
     },
@@ -256,10 +308,12 @@ export const skills = [
         title: "Rédaction de documentation",
         category: "Informatique",
         experiences: [
+            "rectorat-lyon",
             "ufr-assp",
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
             "conformal-prediction-registration-of-algebraic-varieties",
             "logiciel-gestion-piste-aeroport"
         ],
@@ -352,9 +406,12 @@ export const skills = [
         title: "Exploitation des données",
         category: "Informatique",
         experiences: [
+            "rectorat-lyon",
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
+            "projet-tuteure-but3aged",
             "annuaire-administrations-françaises",
             "realisation-visuels-bi-power-bi"
         ],
@@ -364,9 +421,12 @@ export const skills = [
         title: "Réalisation de visuels",
         category: "Informatique",
         experiences: [
+            "rectorat-lyon",
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
+            "projet-tuteure-but3aged",
             "annuaire-administrations-françaises",
             "realisation-visuels-bi-power-bi"
         ],
@@ -381,9 +441,11 @@ export const skills = [
         title: "Travail en équipe",
         category: "Soft skills",
         experiences: [
+            "rectorat-lyon",
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
             "simulnation",
             "realisation-visuels-bi-power-bi",
             "avc-company",
@@ -397,9 +459,12 @@ export const skills = [
         title: "Gestion de projet",
         category: "Soft skills",
         experiences: [
+            "rectorat-lyon",
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
+            "projet-tuteure-but3aged",
             "simulnation",
             "avc-company"
         ],
@@ -409,10 +474,13 @@ export const skills = [
         title: "Analyse des besoins métiers",
         category: "Soft skills",
         experiences: [
+            "rectorat-lyon",
             "ufr-assp",
             "iut-informatique"
         ],
         projects: [
+            "sae-but3aged",
+            "projet-tuteure-but3aged",
             "conformal-prediction-registration-of-algebraic-varieties",
             "annuaire-administrations-françaises",
             "realisation-visuels-bi-power-bi",
@@ -426,6 +494,7 @@ export const skills = [
         title: "Communication interne",
         category: "Soft skills",
         experiences: [
+            "rectorat-lyon",
             "iut-informatique"
         ],
         projects: [

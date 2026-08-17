@@ -6,7 +6,7 @@
                 <a href="#Projects" id="Projects-link">Projets réalisés</a>
                 <a href="#Skills" id="Skills-link">Compétences</a>
                 <a href="#Experiences" id="Experiences-link">Expériences</a>
-                <a href="#Hobbies" id="Hobies-link">Hobbies</a>
+                <!-- <a href="#Hobbies" id="Hobies-link">Hobbies</a> -->
             </div>
         </nav>
     </div>

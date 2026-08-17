@@ -4,22 +4,22 @@
 export const professionalExperiences = [
     {
         id: "rectorat-lyon",
-        title: "Service SI DRAFPIC, GIPAL Formation, Rectorat de Lyon",
+        title: "Service SI DRAFPIC du Rectorat de Lyon pour le GIPAL Formation",
         context: "Alternance",
-        date: "Septembre 2025 - Aujourd'hui",
-        description: "PlaceHolder",
+        date: "Septembre 2025 - Août 2026",
+        description: "J'ai occupé le poste d'assistant GRETA CFA au sein du service SI de la DRAFPIC au Rectorat de Lyon. J'était sous contrat avec le GIPAL Formation. Mes principales missions était le support des utilisateurs, la réalisation d'éditiques pour le pilotage et l'opérationnel et la rédaction de documentation à destination des utilisateurs.",
         skills: [
             // Logiciels
-            
+            "hop", "excel", "visual-studio-code",
             // Langages
-            
+            "sql-server",
             // Informatique
-            
+            "exploitation-donnees", "realisation-visuel", "redaction-documentation",
             // Soft skills
-            
+            "gestion-projet", "analyse", "travail-equipe", "communication-interne"
         ],
         projects: [
-            
+            "projet-tuteure-but3aged"
         ],
     },
     {
