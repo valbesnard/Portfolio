@@ -5,8 +5,8 @@ export const aboutMe = {
     periode: "2021 - Présent (Etudiant), 2025 - Présent (Alternance)",
     ville: "Lyon, France",
     hobbies: "Jeux vidéo, lecture, théâtre, engagement associatif",
-    engagements_associatif_actif: "StudentClub",
-    engagements_associatifs_passes: "BDE Informatique (Secrétaire), Elypsy (Membre actif), La Planck (Membre impliqué)",
+    engagements_associatif_actif: "Aucun",
+    engagements_associatifs_passes: "StudentClub (Secrétaire & Co-responsable PCS), BDE Informatique (Secrétaire), Elypsy (Membre actif), La Planck (Membre impliqué)",
     centres_interet: [
         {link: "https://fr.wikipedia.org/wiki/Programmation_informatique", title: "Programmation"},
         {link: "https://fr.wikipedia.org/wiki/Sciences_sociales", title: "Sciences sociales"},

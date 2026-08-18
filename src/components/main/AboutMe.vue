@@ -33,10 +33,10 @@ import { aboutMe } from "@/data/aboutMe.js";
                     <th>Hobbies</th>
                     <td>{{ aboutMe.hobbies }}</td>
                 </tr> 
-                <tr>
+                <!-- <tr>
                     <th>Engagements associatif</th>
                     <td>{{ aboutMe.engagements_associatif_actif }}</td>
-                </tr> 
+                </tr>  -->
                 <tr>
                     <th>Engagements associatifs passés</th>
                     <td>{{ aboutMe.engagements_associatifs_passes }}</td>
